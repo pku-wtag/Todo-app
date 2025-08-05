@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h1>Todo List</h1>
+
+    <div class="input-container">
+      <input type="text" id="todoInput" placeholder="Add New Task" />
+      <button id="clearInputBtn" class="clear-input-btn" style="display: none">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div class="buttons">
+      <button id="addBtn"><i class="fas fa-plus"></i> Add Task</button>
+      <button id="cancelBtn" style="display: none">Cancel</button>
+    </div>
+
+    <p id="taskStats"></p>
+    <ul id="todoList"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
